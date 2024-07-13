@@ -1,0 +1,215 @@
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 1900px;
+	height: 940px;
+	font-family: "Red Hat Display", sans-serif;
+}
+
+button {
+	font-family: "Red Hat Display", sans-serif;
+	font-size: 1.25rem;
+	border-radius: 10px;
+	border: none;
+	background-color: #d1936a;
+	background: linear-gradient(#d1936a, #9b6744);
+	height: 70px;
+	width: 200px;
+	color: #fff;
+	text-shadow: 1px 1px #000;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: #ca9a7a;
+	background: linear-gradient(#ca9a7a, #ca9a7a);
+}
+
+button:active {
+	background-color: #916345;
+	background: linear-gradient(#916345, #916345);
+}
+
+.cursor-pointer:hover {
+	cursor: pointer;
+}
+
+.game-window,
+.level,
+.segment {
+	width: 1280px;
+	height: 720px;
+}
+
+.game-window {
+	display: grid;
+	grid-template: 1fr / 1fr;
+	border: 3px solid #fff;
+	background-color: #e9cbb9;
+}
+
+.segment {
+	grid-area: 1 / 1 / 2 / 2;
+	display: none;
+}
+
+/* ***INTRO*** */
+
+#intro {
+	display: grid;
+	grid-template: repeat(6, 1fr) / repeat(6, 1fr);
+}
+
+.find-miko-title {
+	font-family: "Red Hat Display", sans-serif;
+	font-size: 4.5rem;
+	font-weight: 600;
+	grid-area: 1 / 1 / 2 / 7;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 1.1rem;
+	color: #fff;
+	border-bottom: 3px solid #fff;
+	background-color: #d1936a;
+	background: linear-gradient(to right top, #835334, #a56a42, #d1936a, #d4a688, #f0dcd0);
+}
+
+.intro-miko {
+	width: 500px;
+	margin: auto auto;
+	border: 3px solid #fff;
+	border-radius: 20px;
+	grid-area: 2 / 1 / 7 / 4;
+}
+
+.intro-para {
+	grid-area: 2 / 4 / 4 / 7;
+	padding-right: 40px;
+	font-size: 1.4rem;
+	margin: auto 0;
+}
+
+.easy-mode,
+.hard-mode {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	padding: 0 20px;
+}
+
+.easy-mode {
+	grid-area: 4 / 4 / 7 / 5;
+}
+
+.hard-mode {
+	grid-area: 4 / 5 / 7 / 6;
+}
+
+/* ***LEVELS*** */
+#lvl1-miko,
+#lvl2-miko,
+#lvl3-miko,
+#lvl4-miko,
+#lvl5-miko {
+	position: relative;
+	transform: scale(0.65);
+}
+
+#lvl1-miko {
+	bottom: 287px;
+	left: 429px;
+}
+
+#lvl2-miko {
+	bottom: 211px;
+	left: 382px;
+}
+
+#lvl3-miko {
+	bottom: 306px;
+	left: 1137px;
+}
+
+#lvl4-miko {
+	bottom: 658px;
+	left: 1067px;
+}
+
+#lvl5-miko {
+	bottom: 624px;
+	left: 534px;
+}
+
+/* ***WIN*** */
+#win {
+	display: none;
+	grid-template: repeat(6, 1fr) / repeat(6, 1fr);
+}
+
+.win-miko-container {
+	grid-area: 2 / 4 / 7 / 7;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+#win-miko {
+	padding: 50px;
+	max-width: 600px;
+	max-height: 600px;
+	min-height: 400px;
+}
+
+#win span {
+	display: none;
+	grid-area: 3 / 1 / 4 / 4;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+.next-container {
+	grid-area: 4 / 1 / 5 / 4;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+/* ***END*** */
+#end {
+	display: none;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#end span {
+	padding: 50px;
+	font-size: 2rem;
+	font-weight: 600;
+}
+
+/* ***OPTIONS*** */
+.options {
+	padding-top: 20px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	width: 1280px;
+}
+
+#give-up {
+	display: none;
+}
+
+.gave-up {
+	transform: scale(2) !important;
+	border-radius: 50%;
+	border: 2px solid #ca2424;
+	transition: all 0.5s ease-in 0s;
+}

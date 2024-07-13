@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+		<title>Miko's Big Day Out</title>
+
+		<link rel="icon" href="./images/favicon.png" />
+		<link rel="stylesheet" href="./styles.css" />
+
+		<script src="./index.js" defer></script>
+
+		<script src="https://kit.fontawesome.com/28e55809cd.js" crossorigin="anonymous"></script>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=WindSong:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+
+	<body>
+		<main>
+			<div class="game-window">
+				<div class="segment" id="intro">
+					<h2 class="find-miko-title">Miko's Big Day Out</h2>
+					<img class="intro-miko" src="./images/mikoforintro.png" alt="" />
+					<p class="intro-para">
+						<i class="fas fa-arrow-left"></i>
+						This is Miko. He has gone out all on his own and is now hiding in all sorts
+						of likely and unlikely locations. Your task is to find him in 5 of these
+						locations and click on him to tell him to come home.
+					</p>
+
+					<div class="easy-mode">
+						<button id="easy-btn">
+							Easy Mode
+							<i class="fas fa-hand-pointer"></i>
+						</button>
+						<p>
+							When you hover over Miko in the scene, the cursor will turn into a
+							pointer
+							<i class="far fa-hand-pointer"></i>
+							. Makes it easier to comb through the image.
+						</p>
+					</div>
+
+					<div class="hard-mode">
+						<button id="hard-btn">
+							Hard Mode
+							<i class="fas fa-mouse-pointer"></i>
+						</button>
+						<p>
+							Confident in your 'Where's Waldo' abilities? In hard mode, the levels
+							are the same, but the cursor won't turn into a pointer
+							<i class="far fa-hand-pointer"></i>
+							when you hover over Miko.
+						</p>
+					</div>
+				</div>
+
+				<div class="segment" id="lvl1">
+					<img class="level" src="./images/level1.png" alt="" />
+					<img id="lvl1-miko" src="./images/mikoforsnowmini.png" alt="" />
+				</div>
+
+				<div class="segment" id="lvl2">
+					<img class="level" src="./images/level2.png" alt="" />
+					<img id="lvl2-miko" src="./images/mikoforforestmini.png" alt="" />
+				</div>
+
+				<div class="segment" id="lvl3">
+					<img class="level" src="./images/level3.png" alt="" />
+					<img id="lvl3-miko" src="./images/mikofortheatermini.png" alt="" />
+				</div>
+
+				<div class="segment" id="lvl4">
+					<img class="level" src="./images/level4.png" alt="" />
+					<img id="lvl4-miko" src="./images/mikofortownmini.png" alt="" />
+				</div>
+
+				<div class="segment" id="lvl5">
+					<img class="level" src="./images/level5.png" alt="" />
+					<img id="lvl5-miko" src="./images/mikoforbeachmini.png" alt="" />
+				</div>
+
+				<div class="segment" id="win">
+					<span id="win-1">Gotcha!</span>
+					<span id="win-2">There he is!</span>
+					<span id="win-3">You found him!</span>
+					<span id="win-4">Get back here, Miko!</span>
+					<span id="win-5">You did it!</span>
+					<span id="win-6">
+						What were you doing
+						<em>there</em>
+						, Miko?
+					</span>
+					<span id="win-7">Got him!</span>
+					<span id="win-8">A-ha!</span>
+
+					<div class="win-miko-container">
+						<img id="win-miko" src="" alt="" />
+					</div>
+
+					<div class="next-container">
+						<button id="next">Next level</button>
+					</div>
+				</div>
+
+				<div class="segment" id="end">
+					<span>All levels cleared!</span>
+					<button id="again">Play again</button>
+				</div>
+			</div>
+
+			<div class="options">
+				<button id="give-up">Give up</button>
+			</div>
+		</main>
+	</body>
+</html>
